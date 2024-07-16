@@ -66,7 +66,7 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </UIElement.RenderTransform>
-            
+
         </Button>
         <Label x:Name="lbl" Content="Scratch" Margin="20,60,0,0" RenderTransformOrigin="0.438,-0.001" HorizontalAlignment="Left" Width="62" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Height="31" VerticalAlignment="Top" Grid.Row="1">
             <UIElement.RenderTransform>
@@ -98,7 +98,7 @@
                 </TransformGroup>
             </UIElement.RenderTransform>
         </Label>
-        <ComboBox x:Name="cmbScartchState" HorizontalAlignment="Left" Margin="92,58,0,0" Width="202" Grid.ColumnSpan="2" Height="35" VerticalAlignment="Top" Grid.Row="1">
+        <ComboBox x:Name="cmbScartchState" HorizontalAlignment="Left" Margin="92,58,0,0" Width="202" MaxWidth="202" MaxHeight="35" Grid.ColumnSpan="2" Height="35" VerticalAlignment="Top" Grid.Row="1">
             <UIElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -110,6 +110,6 @@
             <ListBoxItem Content="None Scratch"/>
             <ListBoxItem Content="Scratch"/>
         </ComboBox>
-        <Image x:Name="imgMain" Grid.ColumnSpan="3" Margin="185,3,8,0" Grid.RowSpan="2" Height="139" VerticalAlignment="Top" Stretch="UniformToFill"/>
+        <Image x:Name="imgMain" Margin="173,3,16,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" OpacityMask="#FF0E0D0D" Grid.ColumnSpan="3" MaxHeight="124" MaxWidth="Infinity" Height="124" VerticalAlignment="Top"/>
     </Grid>
 </Window>

@@ -6,7 +6,7 @@
       <Value Profile="(Default)"> http://127.0.0.1:5000/check1</Value>
     </Setting>
     <Setting Name="OpenDialogeExtention" Type="System.String" Scope="User">
-      <Value Profile="(Default)">BMP|*.bmp|GIF|*.gif|JPG|*.jpg;*.jpeg|PNG|*.png|TIFF|*.tif;*.tiff| All Graphics Types|*.bmp;*.jpg;*.jpeg;*.png;*.tif;*.tiff</Value>
+      <Value Profile="(Default)">JPG|*.jpg;*.jpeg|BMP|*.bmp|GIF|*.gif|PNG|*.png|TIFF|*.tif;*.tiff| All Graphics Types|*.bmp;*.jpg;*.jpeg;*.png;*.tif;*.tiff</Value>
     </Setting>
   </Settings>
 </SettingsFile>

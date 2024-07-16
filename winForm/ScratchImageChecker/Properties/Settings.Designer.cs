@@ -37,7 +37,7 @@ namespace ScratchImageChecker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("BMP|*.bmp|GIF|*.gif|JPG|*.jpg;*.jpeg|PNG|*.png|TIFF|*.tif;*.tiff| All Graphics Ty" +
+        [global::System.Configuration.DefaultSettingValueAttribute("JPG|*.jpg;*.jpeg|BMP|*.bmp|GIF|*.gif|PNG|*.png|TIFF|*.tif;*.tiff| All Graphics Ty" +
             "pes|*.bmp;*.jpg;*.jpeg;*.png;*.tif;*.tiff")]
         public string OpenDialogeExtention {
             get {
