@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ScratchImageChecker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UrlAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)"> http://127.0.0.1:5000/check1</Value>
+    </Setting>
+    <Setting Name="OpenDialogeExtention" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BMP|*.bmp|GIF|*.gif|JPG|*.jpg;*.jpeg|PNG|*.png|TIFF|*.tif;*.tiff| All Graphics Types|*.bmp;*.jpg;*.jpeg;*.png;*.tif;*.tiff</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -116,8 +116,10 @@ def test_model_service(test_img_path: str, label: int):
     
 @app.route('/check1',methods=['GET', 'POST'])
 def check1():
-    apiRequest=request.json
+    print(request) 
+    apiRequest=request.get_json(silent=True)
     
+    print (apiRequest)
     apiAddress=apiRequest["Address"]
     apiLabel=apiRequest["Label"]
     print (apiAddress, apiLabel)
