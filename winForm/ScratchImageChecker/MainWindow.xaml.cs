@@ -47,13 +47,7 @@ namespace ScratchImageChecker
         {
             try
             {
-                //var client = new HttpClient();
-                //var request = new HttpRequestMessage(HttpMethod.Post, Properties.Settings.Default.UrlAddress);
-                //request.Content = new StringContent("{\"Address\": \"" +txtAddress.Text+ "\",\"Label\": \""+cmbScartchState.SelectedIndex+"\"}",null, "application/json");
-                //var response = await client.SendAsync(request);
-                //var responseContent = await response.Content.ReadAsStringAsync();
-                //lblOutput.Content = responseContent;
-                //logger.Info(responseContent);
+
                 var client = new HttpClient();
                 var request = new HttpRequestMessage(HttpMethod.Post, Properties.Settings.Default.UrlAddress);
                 APIRequest aRequestBody = new APIRequest(txtAddress.Text,cmbScartchState.SelectedIndex);
@@ -79,6 +73,7 @@ namespace ScratchImageChecker
             {
                 if (File.Exists(dlgOpenFile.FileName))
                 {
+                    imgMain.Source = new BitmapImage(new Uri(dlgOpenFile.FileName));
                     txtAddress.Text = dlgOpenFile.FileName;
                     btnCheck.IsEnabled = true;
                 }

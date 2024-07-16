@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScratchImageChecker"
         mc:Ignorable="d"
-        Title="AI Image Checkers " Height="160" Width="555" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+        Title="AI Image Checkers " Height="295" Width="565" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"/>
@@ -37,7 +37,7 @@
                 </TransformGroup>
             </UIElement.RenderTransform>
         </Button>
-        <TextBox x:Name="txtAddress" IsReadOnly="True" Margin="91,10,51,0" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Grid.ColumnSpan="4" Height="22">
+        <TextBox x:Name="txtAddress" IsReadOnly="True" Margin="91,17,51,0" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Grid.ColumnSpan="4" Height="22" Grid.Row="1">
             <UIElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -47,7 +47,7 @@
                 </TransformGroup>
             </UIElement.RenderTransform>
         </TextBox>
-        <Label Content="Address" Margin="19,8,0,0" RenderTransformOrigin="0.438,-0.001" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="63" HorizontalContentAlignment="Right">
+        <Label Content="Address" Margin="19,15,0,0" RenderTransformOrigin="0.438,-0.001" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="63" HorizontalContentAlignment="Right" Grid.Row="1">
             <UIElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -57,7 +57,7 @@
                 </TransformGroup>
             </UIElement.RenderTransform>
         </Label>
-        <Button x:Name="btnPath" Content="..." Margin="0,10,7,0" Click="btnPath_Click" Grid.Column="3" HorizontalAlignment="Right" Width="39" Height="20" VerticalAlignment="Top">
+        <Button x:Name="btnPath" Content="..." Margin="0,17,7,0" Click="btnPath_Click" Grid.Column="3" HorizontalAlignment="Right" Width="39" Height="20" VerticalAlignment="Top" Grid.Row="1">
             <UIElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -66,8 +66,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </UIElement.RenderTransform>
+            
         </Button>
-        <Label x:Name="lbl" Content="Scratch" Margin="20,53,0,0" RenderTransformOrigin="0.438,-0.001" Grid.RowSpan="2" HorizontalAlignment="Left" Width="62" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Height="31" VerticalAlignment="Top">
+        <Label x:Name="lbl" Content="Scratch" Margin="20,60,0,0" RenderTransformOrigin="0.438,-0.001" HorizontalAlignment="Left" Width="62" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Height="31" VerticalAlignment="Top" Grid.Row="1">
             <UIElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -97,7 +98,7 @@
                 </TransformGroup>
             </UIElement.RenderTransform>
         </Label>
-        <ComboBox x:Name="cmbScartchState" HorizontalAlignment="Left" Margin="92,51,0,0" Width="202" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="35" VerticalAlignment="Top">
+        <ComboBox x:Name="cmbScartchState" HorizontalAlignment="Left" Margin="92,58,0,0" Width="202" Grid.ColumnSpan="2" Height="35" VerticalAlignment="Top" Grid.Row="1">
             <UIElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -109,5 +110,6 @@
             <ListBoxItem Content="None Scratch"/>
             <ListBoxItem Content="Scratch"/>
         </ComboBox>
+        <Image x:Name="imgMain" Grid.ColumnSpan="3" Margin="185,3,8,0" Grid.RowSpan="2" Height="139" VerticalAlignment="Top" Stretch="UniformToFill"/>
     </Grid>
 </Window>
